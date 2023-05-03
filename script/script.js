@@ -4,7 +4,7 @@ const container = document.querySelector(".rank");
 container.addEventListener('click', (event) => {if (event.target.value!==undefined) {rating = event.target.value}});
 
 //submit button listener
-submit = document.querySelector(".submitButton");
+const submit = document.querySelector(".submitButton");
 submit.addEventListener('click', () => {if (rating!==undefined) return change()});
 
 function change() {
@@ -24,8 +24,8 @@ function change() {
     parentNode.insertBefore(ratingNode, headerNode);
 
     //removal of unnecessary elements
-    document.querySelector(".rank").remove();
-    document.querySelector(".submitButton").remove();
+    container.remove();
+    submit.remove();
 }
 
 
