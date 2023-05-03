@@ -1,0 +1,79 @@
+html { 
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+.frame { 
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.image > img { /* child selector */
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+h1 { 
+    margin: 0;
+    font-weight: 700;
+}
+
+.rank { 
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+}
+
+.rank > button { /* child selector */
+    width: 40px;
+    height: 40px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    color: gray;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
+    border:none;
+  }
+
+.submitButton {
+    width: 100%;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+
+.attribution {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+
+/*
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+*/
