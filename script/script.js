@@ -1,7 +1,13 @@
 //rating button listener
 let rating = undefined;
 const container = document.querySelector(".rank");
-container.addEventListener('click', (event) => {if (event.target.value!==undefined) {rating = event.target.value}});
+let previousTarget;
+
+container.addEventListener('click', (event) => {if (event.target.value!==undefined) {rating = event.target.value;
+    if (previousTarget!==undefined){
+    previousTarget.classList.remove("active");}
+    event.target.classList.add("active");
+    previousTarget = event.target}});
 
 //submit button listener
 const submit = document.querySelector(".submitButton");
@@ -27,5 +33,4 @@ function change() {
     container.remove();
     submit.remove();
 }
-
 
