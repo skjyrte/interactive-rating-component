@@ -2,4 +2,3 @@
 0_untracked/
 node_modules
 .prettierignore
-*.json
