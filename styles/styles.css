@@ -6,6 +6,10 @@ html {
 body {
   padding: 20px;
   background-color: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .frame {
@@ -35,7 +39,8 @@ h1 {
   display: flex;
   width: 100%;
   height: 50px;
-  padding: 0 0 20px 0;
+  /* top | left and right | bottom */
+  padding: 0 0 20px;
 }
 
 .rank > button {
@@ -125,6 +130,16 @@ h1 {
   .submitButton:hover {
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
+  }
+}
+
+
+@media (min-width: 600px){
+  .frame {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 }
 
