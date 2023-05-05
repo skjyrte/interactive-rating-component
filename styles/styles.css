@@ -5,10 +5,11 @@ html {
 
 body {
   padding: 20px;
+  background-color: hsl(216, 12%, 8%);
 }
 
 .frame {
-  background-color: aquamarine;
+  background-color: hsl(213, 19%, 18%);
   border-radius: 10px;
   padding: 20px;
 }
@@ -16,48 +17,52 @@ body {
 .image > img {
   /* child selector */
   display: block;
-  background-color: white;
-  padding: 10px;
+  background-color: hsl(213, 25%, 25%);
+  padding: 12px;
   border-radius: 50%;
 }
 
 h1 {
-  margin: 0;
   font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.para {
+  color: hsl(217, 12%, 63%);
 }
 
 .rank {
   display: flex;
   width: 100%;
   height: 50px;
-  padding: 10px 0;
+  padding: 0 0 20px 0;
 }
 
 .rank > button {
   /* child selector */
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
-  color: gray;
+  color: white;
   margin: auto;
-  background-color: white;
+  background-color: hsl(213, 25%, 25%);
   border-radius: 50%;
   border: none;
 }
 
 .submitButton {
   width: 100%;
-  height: 40px;
-  background-color: aqua;
+  height: 45px;
+  background-color: hsl(25, 97%, 53%);
   border-radius: 20px;
   border: none;
   font-family: inherit;
   font-size: inherit;
   text-transform: uppercase;
   font-weight: 700;
-  color: gray;
+  color: hsl(0, 0%, 100%);
   letter-spacing: 1px;
 }
 
@@ -77,7 +82,50 @@ h1 {
 
 .rank > .active {
   /*child selector because of precedence*/
-  background-color: blueviolet;
+  background-color: hsl(216, 12%, 54%);
+}
+
+/*----final window styling----*/
+
+.ratingResult {
+  color: hsl(25, 97%, 53%);
+  text-align: center;
+  width: 200px;
+  margin: auto;
+  padding: 5px;
+  background-color: hsl(213, 25%, 25%);
+  border-radius: 30px;
+}
+
+.frameFinal > .image > img {
+  /* child selector */
+  margin-left: auto;
+  /*centering block*/
+  margin-right: auto;
+  /*centering block*/
+  background-color: transparent;
+  border-radius: unset;
+}
+
+.frameFinal > h1 {
+  text-align: center;
+}
+
+.frameFinal > .para {
+  text-align: center;
+}
+
+/*----media queries---*/
+
+@media (hover: hover) {
+  .rank > button:hover {
+    background-color: hsl(25, 97%, 53%);
+  }
+
+  .submitButton:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+  }
 }
 
 /*
@@ -85,4 +133,7 @@ The designs were created to the following widths:
 
 - Mobile: 375px
 - Desktop: 1440px
+
+### Primary - Orange: hsl(25, 97%, 53%) ### Neutral - White: hsl(0, 0%, 100%) - Light Grey: hsl(217, 12%, 63%) - Medium Grey: hsl(216, 12%, 54%) - Dark Blue: hsl(213, 19%, 18%) - Very Dark Blue: hsl(216, 12%, 8%)
+
 */

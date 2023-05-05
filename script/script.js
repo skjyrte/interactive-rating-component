@@ -37,8 +37,12 @@ function change() {
   ratingNode.appendChild(textNode);
   const parentNode = document.querySelector(".frame");
   parentNode.insertBefore(ratingNode, headerNode);
+  ratingNode.classList.add("ratingResult");
 
   //removal of unnecessary elements
   container.remove();
   submit.remove();
+
+  //class for styling of second window
+  parentNode.classList.add("frameFinal");
 }
